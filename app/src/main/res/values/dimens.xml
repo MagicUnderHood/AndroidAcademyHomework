@@ -29,7 +29,7 @@
     <dimen name="cast_top_padding">24dp</dimen>
 
     <dimen name="actor_image_top_padding">7dp</dimen>
-    <dimen name="actor_image_end_padding">8dp</dimen>
+    <dimen name="actor_image_start_padding">8dp</dimen>
 
     <dimen name="actor_name_top_padding">6dp</dimen>
 

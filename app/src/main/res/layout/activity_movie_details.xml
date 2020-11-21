@@ -131,9 +131,9 @@
         style="@style/ReviewsTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/reviews_start_padding"
         android:layout_marginTop="@dimen/reviews_top_padding"
         android:text="@string/reviews"
-        android:layout_marginStart="@dimen/reviews_start_padding"
         app:layout_constraintStart_toEndOf="@+id/star_five"
         app:layout_constraintTop_toBottomOf="@id/genre" />
 
@@ -168,6 +168,94 @@
         android:text="@string/cast"
         app:layout_constraintStart_toStartOf="@+id/start_padding_guideline"
         app:layout_constraintTop_toBottomOf="@id/description" />
+
+    <ImageView
+        android:id="@+id/iron_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/actor_image_top_padding"
+        android:src="@drawable/robert"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/america_image"
+        app:layout_constraintStart_toStartOf="@id/start_padding_guideline"
+        app:layout_constraintTop_toBottomOf="@id/cast" />
+
+    <TextView
+        android:id="@+id/iron_name"
+        style="@style/ActorNameTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/actor_name_top_padding"
+        android:text="@string/iron"
+        app:layout_constraintEnd_toEndOf="@id/iron_image"
+        app:layout_constraintStart_toStartOf="@+id/iron_image"
+        app:layout_constraintTop_toBottomOf="@id/iron_image" />
+
+    <ImageView
+        android:id="@+id/america_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/actor_image_start_padding"
+        android:src="@drawable/america"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/hulk_image"
+        app:layout_constraintStart_toEndOf="@id/iron_image"
+        app:layout_constraintTop_toTopOf="@id/iron_image" />
+
+    <TextView
+        android:id="@+id/america_name"
+        style="@style/ActorNameTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/actor_name_top_padding"
+        android:text="@string/america"
+        app:layout_constraintEnd_toEndOf="@id/america_image"
+        app:layout_constraintStart_toStartOf="@+id/america_image"
+        app:layout_constraintTop_toBottomOf="@id/america_image" />
+
+    <ImageView
+        android:id="@+id/hulk_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/actor_image_start_padding"
+        android:src="@drawable/hulk"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/tor_image"
+        app:layout_constraintStart_toEndOf="@id/america_image"
+        app:layout_constraintTop_toTopOf="@id/iron_image" />
+
+    <TextView
+        android:id="@+id/hulk_name"
+        style="@style/ActorNameTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/actor_name_top_padding"
+        android:text="@string/hulk"
+        app:layout_constraintEnd_toEndOf="@id/hulk_image"
+        app:layout_constraintStart_toStartOf="@+id/hulk_image"
+        app:layout_constraintTop_toBottomOf="@id/hulk_image" />
+
+    <ImageView
+        android:id="@+id/tor_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/actor_image_start_padding"
+        android:src="@drawable/tor"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/end_padding_guideline"
+        app:layout_constraintStart_toEndOf="@id/hulk_image"
+        app:layout_constraintTop_toTopOf="@id/iron_image" />
+
+    <TextView
+        android:id="@+id/tor_name"
+        style="@style/ActorNameTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/actor_name_top_padding"
+        android:text="@string/tor"
+        app:layout_constraintEnd_toEndOf="@id/tor_image"
+        app:layout_constraintStart_toStartOf="@+id/tor_image"
+        app:layout_constraintTop_toBottomOf="@id/tor_image" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

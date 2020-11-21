@@ -14,4 +14,5 @@
     <color name="star_inactive">#6D6D80</color>
     <color name="genre_text_color">#FF3466</color>
     <color name="reviews_text_color">#6D6D80</color>
+    <color name="actor_name_text_color">#D8D8D8</color>
 </resources>

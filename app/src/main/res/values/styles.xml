@@ -51,4 +51,10 @@
     <style name="DescriptionTextStyle" parent="WhiteTextStyle.14">
         <item name="android:alpha">0.75</item>
     </style>
+
+    <style name="ActorNameTextStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/actor_name_text_color</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
 </resources>
