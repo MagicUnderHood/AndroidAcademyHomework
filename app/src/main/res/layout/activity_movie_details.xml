@@ -21,37 +21,38 @@
 
     <ImageView
         android:id="@+id/arrow"
-        android:src="@drawable/ic_arrow"
         android:layout_width="@dimen/arrow_width"
         android:layout_height="@dimen/arrow_height"
         android:layout_marginStart="@dimen/arrow_start_padding"
         android:layout_marginTop="@dimen/arrow_top_padding"
+        android:src="@drawable/ic_arrow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/back_text"
-        style="@style/WhiteTextStyle.14"
+        style="@style/BackTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/back"
         android:layout_marginStart="@dimen/back_text_start_padding"
         android:layout_marginTop="@dimen/back_text_top_padding"
+        android:text="@string/back"
         app:layout_constraintStart_toEndOf="@id/arrow"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/age"
-        style="@style/WhiteTextStyle.14"
+        style="@style/AgeTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/age"
-        app:layout_constraintTop_toBottomOf="@id/arrow"
         android:layout_marginTop="@dimen/age_top_padding_to_arrow"
-        app:layout_constraintStart_toStartOf="@+id/start_padding_guideline" />
+        android:text="@string/age"
+        app:layout_constraintStart_toStartOf="@+id/start_padding_guideline"
+        app:layout_constraintTop_toBottomOf="@id/arrow" />
 
     <TextView
         android:id="@+id/title"
+        style="@style/TitleTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/title_top_padding"
@@ -62,6 +63,7 @@
 
     <TextView
         android:id="@+id/genre"
+        style="@style/GenreTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/genre_top_padding"
@@ -70,17 +72,74 @@
         app:layout_constraintStart_toStartOf="@+id/start_padding_guideline"
         app:layout_constraintTop_toBottomOf="@id/title" />
 
+    <ImageView
+        android:id="@+id/star_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/star_top_padding"
+        android:src="@drawable/ic_star_icon"
+        app:layout_constraintStart_toStartOf="@id/start_padding_guideline"
+        app:layout_constraintTop_toBottomOf="@id/genre"
+        app:tint="@color/star_active" />
+
+    <ImageView
+        android:id="@+id/star_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/star_start_padding"
+        android:layout_marginTop="@dimen/star_top_padding"
+        android:src="@drawable/ic_star_icon"
+        app:layout_constraintStart_toEndOf="@id/star_one"
+        app:layout_constraintTop_toBottomOf="@id/genre"
+        app:tint="@color/star_active" />
+
+    <ImageView
+        android:id="@+id/star_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/star_start_padding"
+        android:layout_marginTop="@dimen/star_top_padding"
+        android:src="@drawable/ic_star_icon"
+        app:layout_constraintStart_toEndOf="@+id/star_two"
+        app:layout_constraintTop_toBottomOf="@id/genre"
+        app:tint="@color/star_active" />
+
+    <ImageView
+        android:id="@+id/star_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/star_start_padding"
+        android:layout_marginTop="@dimen/star_top_padding"
+        android:src="@drawable/ic_star_icon"
+        app:layout_constraintStart_toEndOf="@id/star_three"
+        app:layout_constraintTop_toBottomOf="@id/genre"
+        app:tint="@color/star_active" />
+
+    <ImageView
+        android:id="@+id/star_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/star_start_padding"
+        android:layout_marginTop="@dimen/star_top_padding"
+        android:src="@drawable/ic_star_icon"
+        app:layout_constraintStart_toEndOf="@id/star_four"
+        app:layout_constraintTop_toBottomOf="@id/genre"
+        app:tint="@color/star_inactive" />
+
     <TextView
         android:id="@+id/reviews"
+        style="@style/ReviewsTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/reviews_top_padding"
         android:text="@string/reviews"
-        app:layout_constraintStart_toStartOf="@+id/start_padding_guideline"
+        android:layout_marginStart="@dimen/reviews_start_padding"
+        app:layout_constraintStart_toEndOf="@+id/star_five"
         app:layout_constraintTop_toBottomOf="@id/genre" />
 
     <TextView
         android:id="@+id/storyline"
+        style="@style/HeadersTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/storyline_top_padding_to_reviews"
@@ -91,6 +150,7 @@
 
     <TextView
         android:id="@+id/description"
+        style="@style/DescriptionTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/description_top_padding"
@@ -101,6 +161,7 @@
 
     <TextView
         android:id="@+id/cast"
+        style="@style/HeadersTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/cast_top_padding"

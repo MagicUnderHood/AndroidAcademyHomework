@@ -8,5 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="background">#191926</color>
-    <color name="textColor">#ECECEC</color>
+    <color name="text_color">#ECECEC</color>
+    <color name="shadow">#80000000</color>
+    <color name="star_active">#FF3466</color>
+    <color name="star_inactive">#6D6D80</color>
+    <color name="genre_text_color">#FF3466</color>
+    <color name="reviews_text_color">#6D6D80</color>
 </resources>

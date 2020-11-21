@@ -16,7 +16,11 @@
 
     <dimen name="genre_top_padding">4dp</dimen>
 
+    <dimen name="star_top_padding">8dp</dimen>
+    <dimen name="star_start_padding">3.25dp</dimen>
+
     <dimen name="reviews_top_padding">4dp</dimen>
+    <dimen name="reviews_start_padding">8.9dp</dimen>
 
     <dimen name="storyline_top_padding_to_reviews">24dp</dimen>
 
