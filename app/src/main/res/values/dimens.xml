@@ -1,3 +1,36 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="start_margin">16dp</dimen>
+    <dimen name="end_margin">16dp</dimen>
+
+    <dimen name="arrow_start_padding">18dp</dimen>
+    <dimen name="arrow_top_padding">59dp</dimen>
+    <dimen name="arrow_width">6dp</dimen>
+    <dimen name="arrow_height">10dp</dimen>
+
+    <dimen name="back_text_start_padding">8dp</dimen>
+    <dimen name="back_text_top_padding">56dp</dimen>
+
+    <dimen name="age_top_padding_to_arrow">157dp</dimen>
+
+    <dimen name="title_top_padding">12dp</dimen>
+
+    <dimen name="genre_top_padding">4dp</dimen>
+
+    <dimen name="star_top_padding">8dp</dimen>
+    <dimen name="star_start_padding">3.25dp</dimen>
+
+    <dimen name="reviews_top_padding">4dp</dimen>
+    <dimen name="reviews_start_padding">8.9dp</dimen>
+
+    <dimen name="storyline_top_padding_to_reviews">24dp</dimen>
+
+    <dimen name="description_top_padding">4dp</dimen>
+
+    <dimen name="cast_top_padding">24dp</dimen>
+
+    <dimen name="actor_image_top_padding">7dp</dimen>
+    <dimen name="actor_image_start_padding">8dp</dimen>
+
+    <dimen name="actor_name_top_padding">6dp</dimen>
+
 </resources>
