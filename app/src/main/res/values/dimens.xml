@@ -35,8 +35,12 @@
 
     <dimen name="movies_list_title_top_padding">55dp</dimen>
     <dimen name="movies_list_start_padding">16dp</dimen>
-
     <dimen name="movies_list_title_start_padding_to_target">8dp</dimen>
+    <dimen name="movies_list_target_size">16dp</dimen>
+    <dimen name="movies_list_target_start_padding">16dp</dimen>
+    <dimen name="movies_list_target_top_padding">56dp</dimen>
+    <dimen name="movies_list_card_start_padding">14dp</dimen>
+    <dimen name="movies_list_card_top_padding_to_title">27dp</dimen>
 
     <dimen name="movies_card_width">170dp</dimen>
     <dimen name="movies_card_height">296dp</dimen>
@@ -49,12 +53,5 @@
     <dimen name="movies_card_background_image_width">166dp</dimen>
     <dimen name="movies_card_background_image_height">248dp</dimen>
     <dimen name="movies_card_background_image_horizontal_padding">2dp</dimen>
-<!--    <dimen name="movies_card_">dp</dimen>-->
-<!--    <dimen name="movies_card_">dp</dimen>-->
-<!--    <dimen name="movies_card_">dp</dimen>-->
-<!--    <dimen name="movies_card_">dp</dimen>-->
-<!--    <dimen name="movies_card_">dp</dimen>-->
-<!--    <dimen name="movies_card_">dp</dimen>-->
-<!--    <dimen name="movies_card_">dp</dimen>-->
 
 </resources>

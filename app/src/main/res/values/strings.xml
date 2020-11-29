@@ -23,4 +23,6 @@
     <string name="america">Chris Evans</string>
     <string name="hulk">Mark Ruffalo</string>
     <string name="tor">Chris Hemsworth</string>
+
+    <string name="movies_list_title">Movies list</string>
 </resources>
