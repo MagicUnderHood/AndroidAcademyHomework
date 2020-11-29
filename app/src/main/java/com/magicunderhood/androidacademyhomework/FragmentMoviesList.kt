@@ -8,6 +8,9 @@ import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 
+/**
+ * Фрагмент со списком фильмов
+ */
 class FragmentMoviesList : Fragment() {
 
     private var movieClickListener: MovieClickListener? = null

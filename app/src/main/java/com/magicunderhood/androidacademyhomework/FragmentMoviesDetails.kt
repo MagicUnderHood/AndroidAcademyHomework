@@ -9,6 +9,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 
+/**
+ * Фрагмент с деталями о фильме
+ */
 class FragmentMoviesDetails : Fragment() {
 
     private var movieDetailsClickListener: MovieDetailsClickListener? = null
