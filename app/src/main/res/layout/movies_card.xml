@@ -6,6 +6,7 @@
     android:layout_height="@dimen/movies_card_height">
 
     <ImageView
+        android:id="@+id/background"
         android:layout_width="@dimen/movies_card_background_image_width"
         android:layout_height="@dimen/movies_card_background_image_height"
         android:layout_marginStart="@dimen/movies_card_background_image_horizontal_padding"
@@ -20,7 +21,106 @@
         android:layout_height="@dimen/movies_card_heart_height"
         android:layout_marginTop="@dimen/movies_card_heart_top_padding"
         android:layout_marginEnd="@dimen/movies_card_heart_end_padding"
-        app:layout_constraintEnd_toEndOf="parent"
         android:src="@drawable/ic_like"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/star_one"
+        android:layout_width="@dimen/movies_card_star_size"
+        android:layout_height="@dimen/movies_card_star_size"
+        android:layout_marginStart="@dimen/movies_card_star_start_padding_to_background"
+        android:layout_marginBottom="@dimen/movies_card_star_bottom_padding"
+        android:src="@drawable/ic_star_icon"
+        app:layout_constraintBottom_toBottomOf="@id/background"
+        app:layout_constraintStart_toStartOf="@id/background"
+        app:tint="@color/star_active" />
+
+    <ImageView
+        android:id="@+id/star_two"
+        android:layout_width="@dimen/movies_card_star_size"
+        android:layout_height="@dimen/movies_card_star_size"
+        android:layout_marginStart="@dimen/movies_card_star_start_padding"
+        android:layout_marginTop="@dimen/star_top_padding"
+        android:src="@drawable/ic_star_icon"
+        app:layout_constraintBottom_toBottomOf="@id/star_one"
+        app:layout_constraintStart_toEndOf="@id/star_one"
+        app:tint="@color/star_active" />
+
+    <ImageView
+        android:id="@+id/star_three"
+        android:layout_width="@dimen/movies_card_star_size"
+        android:layout_height="@dimen/movies_card_star_size"
+        android:layout_marginStart="@dimen/movies_card_star_start_padding"
+        android:layout_marginTop="@dimen/movies_card_star_start_padding"
+        android:src="@drawable/ic_star_icon"
+        app:layout_constraintBottom_toBottomOf="@id/star_two"
+        app:layout_constraintStart_toEndOf="@+id/star_two"
+        app:tint="@color/star_active" />
+
+    <ImageView
+        android:id="@+id/star_four"
+        android:layout_width="@dimen/movies_card_star_size"
+        android:layout_height="@dimen/movies_card_star_size"
+        android:layout_marginStart="@dimen/movies_card_star_start_padding"
+        android:layout_marginTop="@dimen/movies_card_star_start_padding"
+        android:src="@drawable/ic_star_icon"
+        app:layout_constraintBottom_toBottomOf="@id/star_three"
+        app:layout_constraintStart_toEndOf="@id/star_three"
+        app:tint="@color/star_active" />
+
+    <ImageView
+        android:id="@+id/star_five"
+        android:layout_width="@dimen/movies_card_star_size"
+        android:layout_height="@dimen/movies_card_star_size"
+        android:layout_marginStart="@dimen/movies_card_star_start_padding"
+        android:layout_marginTop="@dimen/movies_card_star_start_padding"
+        android:src="@drawable/ic_star_icon"
+        app:layout_constraintBottom_toBottomOf="@id/star_four"
+        app:layout_constraintStart_toEndOf="@id/star_four"
+        app:tint="@color/star_inactive" />
+
+    <TextView
+        android:id="@+id/reviews"
+        style="@style/SmallReviewsTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/movies_card_reviews_start_padding"
+        android:text="@string/reviews"
+        app:layout_constraintBottom_toBottomOf="@id/star_five"
+        app:layout_constraintStart_toEndOf="@+id/star_five"
+        app:layout_constraintTop_toTopOf="@id/star_five" />
+
+    <TextView
+        android:id="@+id/genre"
+        style="@style/SmallGenreTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/movies_card_genre_start_padding_to_background"
+        android:layout_marginBottom="@dimen/movies_card_genre_bottom_padding_to_review"
+        android:text="@string/movies_list_card_genre"
+        app:layout_constraintBottom_toTopOf="@id/reviews"
+        app:layout_constraintEnd_toEndOf="@id/background"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/WhiteTextStyle.14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/movies_card_title_start_padding"
+        android:layout_marginTop="@dimen/movies_card_title_top_padding"
+        android:text="@string/movie_card_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/background" />
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/MovieCardTimeTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/movies_card_title_start_padding"
+        android:text="@string/movie_card_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
 </androidx.constraintlayout.widget.ConstraintLayout>

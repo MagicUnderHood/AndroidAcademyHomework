@@ -54,4 +54,17 @@
     <dimen name="movies_card_background_image_height">248dp</dimen>
     <dimen name="movies_card_background_image_horizontal_padding">2dp</dimen>
 
+    <dimen name="movies_card_star_size">8dp</dimen>
+    <dimen name="movies_card_star_start_padding">2dp</dimen>
+    <dimen name="movies_card_star_bottom_padding">10dp</dimen>
+    <dimen name="movies_card_reviews_start_padding">6dp</dimen>
+    <dimen name="movies_card_genre_start_padding_to_background">6dp</dimen>
+    <dimen name="movies_card_star_start_padding_to_background">6dp</dimen>
+    <dimen name="movies_card_genre_bottom_padding_to_review">2dp</dimen>
+    <dimen name="movies_card_top_padding_to_title">27dp</dimen>
+
+    <dimen name="movies_card_title_start_padding">8dp</dimen>
+    <dimen name="movies_card_title_top_padding">8dp</dimen>
+
+
 </resources>
