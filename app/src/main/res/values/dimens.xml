@@ -46,6 +46,7 @@
     <dimen name="movies_card_height">296dp</dimen>
     <dimen name="movies_card_age_square_size">24dp</dimen>
     <dimen name="movies_card_age_start_padding">6dp</dimen>
+    <dimen name="movies_card_age_top_padding">8dp</dimen>
     <dimen name="movies_card_heart_width">16dp</dimen>
     <dimen name="movies_card_heart_height">14dp</dimen>
     <dimen name="movies_card_heart_end_padding">6dp</dimen>

@@ -8,14 +8,26 @@
 
     <ImageView
         android:id="@+id/background"
-        android:src="@drawable/background_gradient"
         android:layout_width="@dimen/movies_card_background_image_width"
         android:layout_height="@dimen/movies_card_background_image_height"
         android:layout_marginStart="@dimen/movies_card_background_image_padding"
-        android:layout_marginEnd="@dimen/movies_card_background_image_padding"
         android:layout_marginTop="@dimen/movies_card_background_image_padding"
+        android:layout_marginEnd="@dimen/movies_card_background_image_padding"
+        android:src="@drawable/movie_card_background_gradient"
         android:background="@drawable/avengers_card_background"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:text="@string/movie_card_age"
+        style="@style/MovieCardAgeTextStyle"
+        android:layout_width="@dimen/movies_card_age_square_size"
+        android:layout_height="@dimen/movies_card_age_square_size"
+        android:layout_marginStart="@dimen/movies_card_age_start_padding"
+        android:layout_marginTop="@dimen/movies_card_age_top_padding"
+        android:background="@drawable/movie_card_age_shape"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -125,7 +137,7 @@
         android:layout_marginStart="@dimen/movies_card_title_start_padding"
         android:layout_marginBottom="@dimen/movie_card_time_bottom_padding"
         android:text="@string/movie_card_time"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/title" />
 </androidx.constraintlayout.widget.ConstraintLayout>
