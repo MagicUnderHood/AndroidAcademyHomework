@@ -12,13 +12,7 @@ class MainActivity : AppCompatActivity(),
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            window.setDecorFitsSystemWindows(false)
-        } else {
-            window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
-        }
-
+        hideStatusBar()
         savedInstanceState ?: supportFragmentManager
                 .beginTransaction()
                 .add(R.id.fragments_container, FragmentMoviesList())
@@ -35,5 +29,13 @@ class MainActivity : AppCompatActivity(),
 
     override fun onMovieBackPressed() {
         supportFragmentManager.popBackStack()
+    }
+
+    private fun hideStatusBar() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            window.setDecorFitsSystemWindows(false)
+        } else {
+            window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+        }
     }
 }
