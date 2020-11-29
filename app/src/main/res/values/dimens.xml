@@ -33,4 +33,28 @@
 
     <dimen name="actor_name_top_padding">6dp</dimen>
 
+    <dimen name="movies_list_title_top_padding">55dp</dimen>
+    <dimen name="movies_list_start_padding">16dp</dimen>
+
+    <dimen name="movies_list_title_start_padding_to_target">8dp</dimen>
+
+    <dimen name="movies_card_width">170dp</dimen>
+    <dimen name="movies_card_height">296dp</dimen>
+    <dimen name="movies_card_age_square_size">24dp</dimen>
+    <dimen name="movies_card_age_start_padding">6dp</dimen>
+    <dimen name="movies_card_heart_width">16dp</dimen>
+    <dimen name="movies_card_heart_height">14dp</dimen>
+    <dimen name="movies_card_heart_end_padding">6dp</dimen>
+    <dimen name="movies_card_heart_top_padding">13dp</dimen>
+    <dimen name="movies_card_background_image_width">166dp</dimen>
+    <dimen name="movies_card_background_image_height">248dp</dimen>
+    <dimen name="movies_card_background_image_horizontal_padding">2dp</dimen>
+<!--    <dimen name="movies_card_">dp</dimen>-->
+<!--    <dimen name="movies_card_">dp</dimen>-->
+<!--    <dimen name="movies_card_">dp</dimen>-->
+<!--    <dimen name="movies_card_">dp</dimen>-->
+<!--    <dimen name="movies_card_">dp</dimen>-->
+<!--    <dimen name="movies_card_">dp</dimen>-->
+<!--    <dimen name="movies_card_">dp</dimen>-->
+
 </resources>
