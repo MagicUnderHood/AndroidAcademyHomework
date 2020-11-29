@@ -36,6 +36,7 @@ class FragmentMoviesList : Fragment() {
         movieClickListener = null
     }
 
+    /** Слушатель нажатий в списке фильмов */
     interface MovieClickListener {
         fun onDetailsClicked()
     }

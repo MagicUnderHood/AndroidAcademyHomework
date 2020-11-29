@@ -40,6 +40,7 @@ class FragmentMoviesDetails : Fragment() {
         movieDetailsClickListener?.onMovieBackPressed()
     }
 
+    /** Слушатель нажатий на экране деталей о фильме */
     interface MovieDetailsClickListener {
         fun onMovieBackPressed()
     }
