@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity(),
             window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
         }
 
-        supportFragmentManager
+        savedInstanceState ?: supportFragmentManager
                 .beginTransaction()
                 .add(R.id.fragments_container, FragmentMoviesList())
                 .commit()
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity(),
     override fun onDetailsClicked() {
         supportFragmentManager
                 .beginTransaction()
-                .add(R.id.fragments_container, FragmentMoviesDetails())
+                .replace(R.id.fragments_container, FragmentMoviesDetails())
                 .addToBackStack(null)
                 .commit()
     }
