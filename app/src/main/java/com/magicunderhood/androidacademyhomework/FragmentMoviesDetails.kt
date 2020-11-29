@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 
@@ -18,9 +19,8 @@ class FragmentMoviesDetails : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<TextView>(R.id.back_text).setOnClickListener {
-            movieDetailsClickListener?.onMovieBackPressed()
-        }
+        view.findViewById<TextView>(R.id.back_text).setOnClickListener { exit() }
+        view.findViewById<ImageView>(R.id.arrow).setOnClickListener { exit() }
     }
 
     override fun onAttach(context: Context) {
@@ -31,6 +31,10 @@ class FragmentMoviesDetails : Fragment() {
     override fun onDetach() {
         super.onDetach()
         movieDetailsClickListener = null
+    }
+
+    private fun exit() {
+        movieDetailsClickListener?.onMovieBackPressed()
     }
 
     interface MovieDetailsClickListener {
