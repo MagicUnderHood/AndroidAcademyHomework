@@ -23,4 +23,10 @@
     <string name="america">Chris Evans</string>
     <string name="hulk">Mark Ruffalo</string>
     <string name="tor">Chris Hemsworth</string>
+
+    <string name="movies_list_title">Movies list</string>
+    <string name="movies_list_card_genre">Action, Adventure, Drama</string>
+    <string name="movie_card_title">Avengers: End Game</string>
+    <string name="movie_card_time">137 min</string>
+    <string name="movie_card_age">13+</string>
 </resources>

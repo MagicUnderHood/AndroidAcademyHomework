@@ -15,4 +15,6 @@
     <color name="genre_text_color">#FF3466</color>
     <color name="reviews_text_color">#6D6D80</color>
     <color name="actor_name_text_color">#D8D8D8</color>
+    <color name="movie_card_time_text">#565665</color>
+    <color name="movie_card_outline">#3B3B4D</color>
 </resources>

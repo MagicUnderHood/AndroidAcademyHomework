@@ -34,9 +34,20 @@
         <item name="android:textSize">14sp</item>
     </style>
 
+    <style name="SmallGenreTextStyle">
+        <item name="android:textColor">@color/genre_text_color</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+
     <style name="ReviewsTextStyle">
         <item name="android:textColor">@color/reviews_text_color</item>
         <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="SmallReviewsTextStyle">
+        <item name="android:textColor">@color/reviews_text_color</item>
+        <item name="android:textSize">8sp</item>
         <item name="textAllCaps">true</item>
     </style>
 
@@ -56,5 +67,18 @@
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/actor_name_text_color</item>
         <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="MovieCardTimeTextStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/movie_card_time_text</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="MovieCardAgeTextStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">3sp</item>
     </style>
 </resources>

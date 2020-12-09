@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:endColor="#FFFF3365"
+                android:endX="5.33782"
+                android:endY="16.4314"
+                android:startColor="#FFFF4D79"
+                android:startX="-5.25407"
+                android:startY="5.50934"
+                android:type="linear" />
+            <size
+                android:width="16dp"
+                android:height="16dp" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_target_empty" />
+</layer-list>
